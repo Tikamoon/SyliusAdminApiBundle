@@ -38,9 +38,9 @@ final class OrderType extends AbstractResourceType
 
     public function __construct(
         string $dataClass,
-        array $validationGroups = [],
         RepositoryInterface $localeRepository,
-        ?ChoiceLoaderInterface $customerChoiceLoader = null
+        array $validationGroups = [],
+        ?ChoiceLoaderInterface $customerChoiceLoader = null,
     ) {
         parent::__construct($dataClass, $validationGroups);
 
